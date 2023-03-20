@@ -3,10 +3,16 @@
 <head>
   <title>Sol</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="playlist.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
   <script  type="text/javascript" src="pop_up.js" defer></script>
+  <script type="text/javascript" src="playlist.js" defer></script>
 </head>
 <body>
 <div id="menu">
+<li ><img id="logo" src="assest/images/logo.jpg"></li>
 <li><a href="#about">About Me</a></li>
 <li><a href="#photos">My Photos</a></li>
 <li><a href="#playlist">My Playlist</a></li>
@@ -18,14 +24,14 @@
 		  
 <section id="about" class="section">
 
-<h1>About me </h1>
+<h1><span>About me </span></h1>
 <br/>
 <br/>
 <br/>
 </section>
 
 <section id="photos" class="section">
-  <h1>My Photos</h1>
+  <h1><span>My Photos</span></h1>
   <div class="media-scroller snaps-inline">
     <div class="media-element"><img src="assest/images/img1.jpg"></div>
     <div class="media-element"><img src="assest/images/img2.jpg"></div>
@@ -53,28 +59,39 @@
 
 
 <section id="playlist" class="section">
-<h1>My Playlist </h1>
-<br/>
-<br/>
-<br/>
+<h1><span>My Playlist</span> </h1>
+ <div class="playlist" >
+        <table>
+        <th>
+            <div id="scroll-list">
+                <ul class="playlist-songs">
+                </ul>
+            </div>
+        </th>
+        <th>
+            <iframe id="video-yt" src="https://www.youtube.com/embed/WVxwqTrHC1E" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </th>
+    </table>
+    </div>
 </section>
 
 <section id="like" class="section">
-<h1>Give me a like</h1>
+<h1><span>Give me a like</span></h1>
 <br/>
 <br/>
 <br/>
 </section>
 
 <section id="qrcoder" class="section">
-<h1>My Code </h1>
+<h1><span>My Code</span> </h1>
 <br/>
 <br/>
 <br/>
 </section>
 
 <section id="spa" class="section">
-<h1>Q&A</h1>
+<h1><span>Q&A</span></h1>
 <br/>
 <br/>
 <br/>
@@ -82,7 +99,7 @@
 
 <section id="contact" class="section">
 
-<h1>Contact Me </h1>
+<h1><span>Contact Me</span> </h1>
 <br/>
 <br/>
 <br/>

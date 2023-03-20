@@ -2,19 +2,24 @@
 	--main-color:  rgb(69, 104, 164);
 	--hover-color: rgb(63, 90, 137);
 	--surface-3: rgb(196, 201, 211);
+	--size-2: 10px;
 	--size-3: 15px;
 	--size-2: 12px;
 	--size-4: 30px;
+	--size-5: 40px;
 	--radius-2: 1rem;
 	--shadow-2: 10px 10px rgb(132, 134, 137);
 	--shadow-3: 10px 10px rgb(33, 35, 37);
+}
+body {
+	font-family: 'Merriweather';
 }
 
 #menu
 {
 	position: fixed;
 	width: 100%;
-	height: 40px;
+	height: var(--size-5);
 	background: var(--main-color);
 	margin: 0;
 	padding: 0;
@@ -27,11 +32,14 @@
 {
 	color:black;
 	text-align: center;
-}
-
-li {
 	float: left;
 }
+
+#logo {
+	width: var(--size-5);
+	height: var(--size-5);
+}
+
 
 li a{
 	display: block;
@@ -49,23 +57,38 @@ li a:hover{
 }
 
 section.section {
-	text-align: center;
-	border-top:  8px solid var(--main-color);
 	border-radius: 5px;
-	padding: 1rem;
+	padding-top: 5rem;
 }
 
+section h1 {
+	width: 100%;
+	text-align: center;
+	border-bottom: 8px solid var(--main-color);
+	line-height: 0.1em;
+	margin: 10px 0 20px;
+	
+}
+
+section h1 span {
+	background: #fff;
+	padding: var(--size-2);
+	border-radius: 100%;	
+}
+
+
 .media-scroller {
-	--_spacer: var(--size-3);
+	--_spacer: var(--size-2);
 	display: grid;
 	gap: var(--_spacer);
 	grid-auto-flow: column;
 	grid-auto-columns: 29%;
-  
-	padding: 0 var(--_spacer) var(--_spacer);
+
   
 	overflow-x: auto;
 	overscroll-behavior-inline: contain;
+
+	width: 100vw;
   }
   
 .media-scroller--with-groups {
@@ -82,7 +105,7 @@ section.section {
 	display: grid;
 	grid-template-rows: min-content;
 	gap: var(--_spacer);
-	padding: var(--_spacer);
+	padding: 0px;
 	background: var(--surface-2);
 	border-radius: var(--radius-2);
 	box-shadow: var(--shadow-2);
@@ -93,6 +116,7 @@ section.section {
 	aspect-ratio: 16 / 9;
 	object-fit: cover;
 	cursor: pointer;
+	border-radius: var(--radius-2);
   }
 
 .media-element:hover{
@@ -152,7 +176,7 @@ section.section {
 	background: var(--main-color);
 	color: #fff;
 	text-align: center;
-	line-height: 50px;
+	line-height: 30px;
 	font-weight: 300;
 }
 
@@ -211,3 +235,4 @@ section.section {
 	min-height: 40%;
 	object-fit: contain;
 }
+
