@@ -11,6 +11,11 @@
 	--shadow-2: 10px 10px rgb(132, 134, 137);
 	--shadow-3: 10px 10px rgb(33, 35, 37);
 }
+
+html{
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Merriweather';
 }
@@ -25,8 +30,16 @@ body {
 	padding: 0;
 	overflow: hidden;
 	list-style: none;
+	z-index: 1;
 }
 
+#spa {
+	align: right;
+}
+
+.fb-like {
+	right: 7%;
+}
 
 #menu li
 {
@@ -59,6 +72,11 @@ li a:hover{
 section.section {
 	border-radius: 5px;
 	padding-top: 5rem;
+
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 section h1 {
