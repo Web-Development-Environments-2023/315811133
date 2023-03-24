@@ -3,15 +3,20 @@
 <head>
   <title>Sol</title>
   <META http-equiv="Content-Type" content="text/html; charset=iso-8859-8">
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <link rel="stylesheet" type="text/css" href="playlist.css" />
-  <link rel="stylesheet" type="text/css" href="contactme.css" />
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/playlist.css" />
+  <link rel="stylesheet" type="text/css" href="css/contactme.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
-  <script  type="text/javascript" src="pop_up.js" defer></script>
-  <script type="text/javascript" src="playlist.js" defer></script>
+  
+  <script  type="text/javascript" src="javascript/pop_up.js" defer></script>
+  <script type="text/javascript" src="javascript/playlist.js" defer></script>
+  <script type="text/javascript" src="javascript/sendEmail.js" defer></script>
+  <script type="text/javascript" src="javascript/emoji.js" defer></script>
   <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v16.0" nonce="hL4ZBmgb"></script>
 </head>
@@ -78,7 +83,7 @@
             </div>
         </th>
         <th>
-            <iframe id="video-yt" src="https://www.youtube.com/embed/WVxwqTrHC1E" 
+            <iframe id="video-yt" src="https://www.youtube.com/embed/UBk0zFkT55Y" 
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </th>
     </table>
@@ -133,35 +138,61 @@
 מידע בינלאומי נגיש לציבור הכללי, אך במקום להפוך קבצים ומדיה ניגשית למשתמשים, ההתמקדות להפוך מידע נגיש באופן פתוח למשתמשים.
 האינטרנט של המידע מכיל סוגים רבים של מידע כגון אינצקלופדיה, מידע על מוסיקה, ספרים ומאמרים אוניברסטאים., מידע גיאוגרפי. הקישוריות בין אובייקטים גבוה במודל   RDF התומך באבסטרקציה של מבנה הדף, כך ששינוי בחלק מהדף לא יוביל לשינוי נרחב בכל עץ החלקים של הדף. מבנה המידע מוצג באופן פשוט.
 </p>
+
+<div >
+  <table id="diff-tb">
+    <tr>
+      <th>Web 1.0</th>
+      <th>Web 2.0</th>
+      <th>Web 3.0</th>
+    </tr>
+    <tr>
+      <td>קריאה בלבד</td>
+      <td>קריאה-כתיבה</td>
+      <td>אינטרקצית קריאת כתיבה</td>
+    </tr>
+    <tr>
+      <td>מידע פרטי של האתר</td>
+      <td>ניתן לחלוק מידע</td>
+      <td>חלוקת מידע מגובשת</td>
+    </tr>
+    <tr>
+      <td>דף אינטרנט פשוט</td>
+      <td>שימוש קצה בשירותים באינטרנט</td>
+      <td>מרחבי מידע נרחבים וניגשים למשתמשים</td>
+    </tr>
+  </table>
+</div>
 </section>
 
 <section id="contact" class="section">
 
+<script src="https://smtpjs.com/smtp.js"></script>
 <h1><span>Contact Me</span> </h1>
-  <form>
-    <table>
-        <th>
-            <div class="form-group">
-                <label>:הודעה</label><br>
-                <textarea class="form-control" type="text"></textarea>
-            </div>
-            <div class="form-group">
-                <input class="bt-send" type="submit" value="שלח">
-            </div>
-        </th>
-    <th>
-        <br><br>
-    <div class="form-group">
-        <label>:אל</label><br>
-        <input type="text" class="form-control" placeholder="email address" value="edenabu@post.bgu.ac.il">
-    </div>
-    <div class="form-group">
-        <label>:שולח</label><br>
-        <input type="text" class="form-control" placeholder="email address">
-    </div>
-    </th>
-    </table>
-  </div>
+
+  <form id="email" method="post" action="mailto:edenabush@outlook.com" enctype="text/plain">
+
+    <ul>
+      <li>
+        <textarea id="message" name="comment"></textarea>
+      </li>
+      <li>
+      <div id="emoji-tb">
+        <td><input type="button" value="&#128512;"ְ class="emoji-btn"></td>
+        <td><input type="button" value="&#128512;" class="emoji-btn"></td>
+        <td><input type="button" value="&#128513;" class="emoji-btn"></td>
+        <td><input type="button" value="&#128515;" class="emoji-btn"></td>
+          <td><input type="button" value="&#128516;" class="emoji-btn"></td>
+          <td><input type="button" value="&#128517;" class="emoji-btn"></td>
+          <td><input type="button" value="&#128507;" class="emoji-btn"></td>
+          <td><input type="button" value="&#128508;" class="emoji-btn"></td>
+          <td><input type="button" value="&#128509;" class="emoji-btn"></td>
+          <td><input type="button" value="&#128510;" class="emoji-btn"></td>
+          <td><input type="button" value="&#128511;" class="emoji-btn"></td>
+          <div>
+          </li>
+          <li><input type="submit" class="button" value="שלח"></li>
+    </ul>
   </form>
 </section>
 
