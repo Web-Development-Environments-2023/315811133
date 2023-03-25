@@ -1,0 +1,46 @@
+@import './constants.css';
+
+
+.playlist-container iframe {
+	padding: var(--size-3)
+	
+} 
+
+.playlist-songs {
+    list-style-type: none;
+	text-align: left;
+} 
+
+.playlist-songs li {
+    cursor: pointer;
+    text-align: right;
+    background-color: var(--main-color);
+    color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.1rem;
+    font-weight: normal;
+} 
+
+.playlist-songs li:hover{
+    background-color: var(--hover-color);
+    font-weight: bolder;
+} 
+
+.playlist {
+    display: grid;
+    justify-content: center;
+}
+
+
+#scroll-list {
+    height: var(--size-6);
+    inline-size: 30rem;
+    overflow-y: scroll;
+    
+}
+
+#video-yt{
+    height: var(--size-6);
+    width: 400px;
+}

@@ -1,0 +1,14 @@
+:root {
+	--main-color:  rgb(175, 51, 51);
+	--hover-color: rgb(73, 84, 106);
+	--surface-3: rgb(196, 201, 211);
+	--size-2: 10px;
+	--size-3: 15px;
+	--size-2: 12px;
+	--size-4: 30px;
+	--size-5: 40px;
+    --size-6: 128px;
+	--radius-2: 1rem;
+	--shadow-2: 10px 10px rgb(132, 134, 137);
+	--shadow-3: 10px 10px rgb(33, 35, 37);
+}

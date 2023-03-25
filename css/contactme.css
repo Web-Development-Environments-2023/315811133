@@ -1,0 +1,31 @@
+@import './constants.css';
+
+.email-form {
+    justify-content: right;
+    margin: 50px;
+}
+
+
+.form-control {   
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+.form-group {
+    text-align: right;
+    padding: 10px;
+}
+
+.bt-send {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.bt-send:hover{
+    background-color: var(--hover-color);
+    font-weight: bold;
+}
+
+textarea{
+    width: 300px;
+}
