@@ -17,19 +17,26 @@
   <script type="text/javascript" src="javascript/playlist.js" defer></script>
   <script type="text/javascript" src="javascript/sendEmail.js" defer></script>
   <script type="text/javascript" src="javascript/emoji.js" defer></script>
+  <script type="text/javascript" src="javascript/colors.js" defer></script>
+
   <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v16.0" nonce="hL4ZBmgb"></script>
 </head>
 <body>
 <div id="menu">
-<li ><img id="logo" src="assest/images/logo.jpg"></li>
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
+  <li ><img id="logo" src="assest/images/logo.jpg"></li>
+  <li><a href="#about">About Me</a></li>
+  <li><a href="#photos">My Photos</a></li>
+  <li><a href="#playlist">My Playlist</a></li>
+  <li><a href="#like">Like</a></li>
+  <li><a href="#qrcoder">QR code</a></li>
+  <li><a href="#spa">Q&A</a></li>
+  <li><a href="#contact">Contact Me</a></li>
+  <div style="float:right; margin-right: 10px;">
+    <li class="color">ְ<button class="dot red" id="red" type="button" onclick="setColor('red')"></button></li>
+    <li class="color">ְ<button class="dot blue" id="blue" type="button" onclick="setColor('blue')"></button></li>
+    <li class="color">ְ<button class="dot green" id="green" type="button" onclick="setColor('green')"></button></li>
+  </div>
 </div>
 		  
 <section id="about" class="section">
@@ -88,7 +95,7 @@
       </th>
     </table>
   </div>
-  <div style="position:absolute; z-index: -1;"><img src="assest/images/deco4.jpg" style="width:auto; height: 400px; margin-top: 100px"></div>
+  <div style="position:absolute; z-index: -1;"><img src="assest/images/deco4.jpg" style="width:auto; height: 400px; margin-top: 100px; margin-left: -300px;"></div>
 </section>
 
 <section id="like" class="section">
