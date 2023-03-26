@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="colors.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>ְ<button class="dot red" id="red" type="button" onclick="setColor('red')"></button></li>
+        <li>ְ<button class="dot blue" id="blue" type="button" onclick="setColor('blue')"></button></li>
+        <li>ְ<button class="dot green" id="green" type="button" onclick="setColor('green')"></button></li>
+    </ul>
+
+</body>
+
+<style>
+    :root{
+        --main-color: black;
+        --hover-color: grey;
+    }
+
+    html {
+        background-color: var(--main-color);
+    }
+
+    html:hover{
+        background-color:  rgb(49, 107, 134);
+    }
+    
+    ul {
+        list-style: none;
+        gap: 10px;
+    }
+    ul li{
+        padding: 10px;
+        height: 25px;
+        width: 25px;
+        display: inline-block;
+    }
+    ul li:hover {
+        transform: scale(1.1);
+    }
+   
+    .dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    border: solid black 1px;
+    }
+
+    .dot:hover {
+        transform: scale(1.02);
+    }
+
+    .red {
+        background-color: rgb(116, 20, 20);
+    }
+
+    .green {
+        background-color: rgb(37, 131, 174);
+    }
+
+    .blue {
+        background-color: rgb(31, 31, 114);
+    }
+</style>
+</html>

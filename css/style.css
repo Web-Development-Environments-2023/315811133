@@ -2,6 +2,37 @@
 
 html{
 	scroll-behavior: smooth;
+	font-size: 24px;
+}
+
+.color {
+	float: right;
+	padding: 5px;
+}
+.color:hover{
+	transform: scale(1.1);
+}
+
+.dot {
+	height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    border: solid black 1px;
+}
+
+
+
+.red {
+	background-color: rgb(116, 20, 20);
+}
+
+.green {
+	background-color: rgb(37, 131, 174);
+}
+
+.blue {
+	background-color: rgb(31, 31, 114);
 }
 
 body {
@@ -19,6 +50,7 @@ body {
 	overflow: hidden;
 	list-style: none;
 	z-index: 1;
+	font-size: 16px;
 }
 
 #menu li
@@ -141,16 +173,6 @@ section h1 span {
 	width: 100vw;
   }
   
-.media-scroller--with-groups {
-	grid-auto-columns: 80%;
-  }
-  
-.media-group {
-	display: grid;
-	gap: var(--_spacer);
-	grid-auto-flow: column;
-  }
-  
 .media-element {
 	display: grid;
 	grid-template-rows: min-content;
@@ -226,7 +248,7 @@ section h1 span {
 	background: var(--main-color);
 	color: #fff;
 	text-align: center;
-	line-height: 30px;
+	line-height: 10px;
 	font-weight: 300;
 }
 

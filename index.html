@@ -17,19 +17,26 @@
   <script type="text/javascript" src="javascript/playlist.js" defer></script>
   <script type="text/javascript" src="javascript/sendEmail.js" defer></script>
   <script type="text/javascript" src="javascript/emoji.js" defer></script>
+  <script type="text/javascript" src="javascript/colors.js" defer></script>
+
   <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v16.0" nonce="hL4ZBmgb"></script>
 </head>
 <body>
 <div id="menu">
-<li ><img id="logo" src="assest/images/logo.jpg"></li>
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
+  <li ><img id="logo" src="assest/images/logo.jpg"></li>
+  <li><a href="#about">About Me</a></li>
+  <li><a href="#photos">My Photos</a></li>
+  <li><a href="#playlist">My Playlist</a></li>
+  <li><a href="#like">Like</a></li>
+  <li><a href="#qrcoder">QR code</a></li>
+  <li><a href="#spa">Q&A</a></li>
+  <li><a href="#contact">Contact Me</a></li>
+  <div style="float:right; margin-right: 10px;">
+    <li class="color">ְ<button class="dot red" id="red" type="button" onclick="setColor('red')"></button></li>
+    <li class="color">ְ<button class="dot blue" id="blue" type="button" onclick="setColor('blue')"></button></li>
+    <li class="color">ְ<button class="dot green" id="green" type="button" onclick="setColor('green')"></button></li>
+  </div>
 </div>
 		  
 <section id="about" class="section">
@@ -47,14 +54,14 @@
 <section id="photos" class="section">
   <h1><span>My Photos</span></h1>
   <div class="media-scroller snaps-inline">
-    <div class="media-element"><img src="assest/images/img1.jpg"></div>
-    <div class="media-element"><img src="assest/images/img2.jpg"></div>
-    <div class="media-element"><img src="assest/images/img3.jpg"></div>
-    <div class="media-element"><img src="assest/images/img4.jpg"></div>
-    <div class="media-element"><img src="assest/images/img5.jpg"></div>
-    <div class="media-element"><img src="assest/images/img6.jpg"></div>
-    <div class="media-element"><img src="assest/images/img7.jpg"></div>
-    <div class="media-element"><img src="assest/images/img8.jpg"></div>
+    <div class="media-element"><img src="assest/images/img1.jpg" name="Cooking with Bearos"></div>
+    <div class="media-element"><img src="assest/images/img2.jpg" name="Family Picture"></div>
+    <div class="media-element"><img src="assest/images/img3.jpg" name="Rap Battle vs Nom Nom"></div>
+    <div class="media-element"><img src="assest/images/img4.jpg" name="Reading about..."></div>
+    <div class="media-element"><img src="assest/images/img5.jpg" name="Selfie at the museam"></div>
+    <div class="media-element"><img src="assest/images/img6.jpg" name="Elden Ring Release!!!"></div>
+    <div class="media-element"><img src="assest/images/img7.jpg" name="First Boss battle 😧"></div>
+    <div class="media-element"><img src="assest/images/img8.jpg" name="Weakend at Home"></div>
   </div>
   <div class="pop-up">
     <!-- Tap Bar -->
@@ -149,7 +156,7 @@
 </p>
 <div style="display:flex;">
   <div>
-    <img style="height: 350px;" src="assest/images/deco5.jpg">
+    <img style="height: 396px;" src="assest/images/deco5.jpg">
   </div>
   <div >
     

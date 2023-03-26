@@ -13,7 +13,7 @@ let index = 0; // will track current image
 
 images.forEach((item, i) => {
     item.addEventListener('click', () => {
-        updateImage(i);
+        updateImage(i, item.firstChild.name);
         popup.classList.toggle('active');
     })
 })
@@ -23,10 +23,10 @@ closeBtn.addEventListener('click', () => {
     
 })
 
-const updateImage = (i) => {
+const updateImage = (i, name) => {
     let path = `assest/images/img${i+1}.jpg`
     largeImage.src = path;
-    imageName.innerHTML = path;
+    imageName.innerHTML = name;
     imageIndex.innerHTML = `${totalImages}/${i+1}`;
     index = i;
 }
