@@ -1,6 +1,6 @@
 # We Bare Bears Site
 ## Author: Eden Abuhatzeira - 315811133
-### <a href="">Git Pages Link</a>
+### <a href="https://web-development-environments-2023.github.io/315811133/">Git Pages Link</a>
 
 
 Change the theme color of the site by pressing those buttons!<br>
